@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,5 +18,37 @@
     <button id="updateButton" type='submit'>Update</button>
   </form>
   <script src='app/app.js'></script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>ToDo List</title>
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+</head>
+<body onload="getTask(event)">
+<div id="wrapper"> 
+ <div id="header">To Do List</div> 
+ <div id="yourdiv"> 
+ <form id="todolist">
+  <textarea name="todo" Placeholder="Enter Task" id="taskbox" required></textarea><br />
+<input id="submit" type="submit" value="Add" />
+  </form>
+  <div id="showTaskList">
+  </div>
+	</div>
+<div>
+
+<script src="app/app.js"></script>
+</div>
+</div>
 </body>
 </html>
